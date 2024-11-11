@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Frontend Developer Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.16/tailwind.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="bg-[#1a1a1a] py-4 shadow-md">
+    <nav class="container mx-auto flex justify-between items-center">
+      <a href="#" class="text-2xl font-bold text-[#9b59b6]">Webfolio</a>
+      <div class="flex space-x-6">
+        <a href="#" class="nav-link">About</a>
+        <a href="#" class="nav-link">Skills</a>
+        <a href="#" class="nav-link">Projects</a>
+        <a href="#" class="nav-link">Services</a>
+        <a href="#" class="nav-link">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container mx-auto py-8">
+    <section class="mb-12 hero">
+        <div class="sec2">
+            <h1 class="text-4xl font-bold mb-4">Hello, I'm Divyanshu.</h1>
+            <p class="text-lg mb-6">Bring Life to your Ideas with My Expertise</p>
+            <a href="#" class="button">View Projects</a>
+        </div>
+        <div class="sec1">
+            <img src="hero.jpeg" alt="">
+        </div>
+    </section>
+
+    <section class="mb-12">
+      <h2 class="text-3xl font-bold mb-6">About Me</h2>
+      <div class="card">
+        <p>As a passionate frontend developer, I specialize in creating visually stunning and highly functional web applications. With a keen eye for detail and a deep understanding of modern web technologies, I bring your ideas to life with elegance and efficiency.</p>
+      </div>
+    </section>
+
+    <section class="mb-12">
+      <h2 class="text-3xl font-bold mb-6">Skills</h2>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+        <div class="card flex items-center justify-center hover:bg-[#9b59b6] hover:text-[#1a1a1a]">
+          <i class="fab fa-react text-[#61dafb] text-4xl mr-2"></i>
+          <span>React</span>
+        </div>
+        <div class="card flex items-center justify-center hover:bg-[#9b59b6] hover:text-[#1a1a1a]">
+          <i class="fab fa-js-square text-[#f7df1e] text-4xl mr-2"></i>
+          <span>JavaScript</span>
+        </div>
+        <div class="card flex items-center justify-center hover:bg-[#9b59b6] hover:text-[#1a1a1a]">
+          <i class="fab fa-html5 text-[#e34c26] text-4xl mr-2"></i>
+          <span>HTML</span>
+        </div>
+        <div class="card flex items-center justify-center hover:bg-[#9b59b6] hover:text-[#1a1a1a]">
+          <i class="fab fa-css3-alt text-[#2965f1] text-4xl mr-2"></i>
+          <span>CSS</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="mb-12">
+      <h2 class="text-3xl font-bold mb-6">Projects</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div class="card">
+          <img src="proj1.png" alt="Project 1" class="mb-4">
+          <h3 class="text-xl font-semibold mb-2">Project 1</h3>
+          <p class="mb-4">(Future Project) <br> A responsive e-commerce website built with React, Redux, and Tailwind CSS.</p>
+          <a href="#" class="button">View Project</a>
+        </div>
+        <div class="card">
+          <img src="proj2.png" alt="Project 2" class="mb-4">
+          <h3 class="text-xl font-semibold mb-2">Project 2</h3>
+          <p class="mb-4">(Future Project) <br> A data visualization dashboard using React, D3.js, and Recharts.</p>
+          <a href="#" class="button">View Project</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="mb-12">
+      <h2 class="text-3xl font-bold mb-6">Services</h2>
+      <div class="card">
+        <ul class="list-disc pl-6 space-y-2">
+          <li>Custom Web Application Development</li>
+          <li>UI/UX Design</li>
+          <li>Frontend Optimization</li>
+          <li>Responsive Web Design</li>
+          <li>Single Page Application (SPA) Development</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="mb-12">
+      <h2 class="text-3xl font-bold mb-6">Contact</h2>
+      <div class="card">
+        <form>
+          <div class="mb-4">
+            <label for="name" class="block mb-2">Name</label>
+            <input placeholder = "Enter Your Good Name" ="text" id="name" name="name" class="textcustom bg-[#1a1a1a] border-[#444444] border rounded-md py-2 px-3 w-full focus:outline-none focus:ring-2 focus:ring-[#8e44ad]" required>
+          </div>
+          <div class="mb-4">
+            <label for="email" class="block mb-2">Email</label>
+            <input placeholder = "Your Email" ="email" id="email" name="email" class="textcustom bg-[#1a1a1a] border-[#444444] border rounded-md py-2 px-3 w-full focus:outline-none focus:ring-2 focus:ring-[#8e44ad]" required>
+          </div>
+          <div class="mb-4">
+            <label for="message" class="block mb-2">Message</label>
+            <textarea placeholder = "Share something sweet :)" id="message" name="message" rows="4" class="textcustom bg-[#1a1a1a] border-[#444444] border rounded-md py-2 px-3 w-full focus:outline-none focus:ring-2 focus:ring-[#8e44ad]" required></textarea>
+          </div>
+          <button type="submit" class="button">Send Message</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-[#1a1a1a] py-4 mt-8 shadow-inner">
+    <div class="container mx-auto flex justify-between items-center">
+      <p>&copy; 2023 Divyanshu. All rights reserved.</p>
+      <div class="flex space-x-4">
+        <a href="#" class="text-[#9b59b6] hover:text-[#8e44ad] transition-colors duration-300">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="#" class="text-[#9b59b6] hover:text-[#8e44ad] transition-colors duration-300">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="#" class="text-[#9b59b6] hover:text-[#8e44ad] transition-colors duration-300">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

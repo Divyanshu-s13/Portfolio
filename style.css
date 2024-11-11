@@ -1,0 +1,90 @@
+body {
+    background-color: #1a1a1a;
+    color: #f4f4f4;
+  }
+
+  .hero{
+    height: 450px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .sec1{
+    display: flex;
+    border-radius: 500px;
+    overflow: hidden;
+    margin-right: 100px;
+    object-fit: contain;
+  }
+  .sec2 h1{
+    font-size: 60px;
+    line-height: 1.5;
+  }
+  .sec2 p{
+    font-size: 25px;
+    margin-bottom: 60px;
+  }
+  .sec1 img{
+    width: 300px;
+  }
+  .sec2{
+    flex: 1;
+  }
+
+  .nav-link {
+    position: relative;
+    color: #f4f4f4;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    transition: all 0.3s ease;
+  }
+
+  .nav-link:before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(to right, #9b59b6, #8e44ad);
+    transition: all 0.3s ease;
+  }
+
+  .nav-link:hover:before {
+    width: 100%;
+  }
+
+  .nav-link:hover {
+    color: #9b59b6;
+    text-shadow: 0 0 10px #9b59b6, 0 0 20px #9b59b6, 0 0 30px #9b59b6;
+  }
+
+  .card {
+    background-color: rgba(26, 26, 26, 0.8);
+    box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.3), -6px -6px 12px rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 2rem;
+    transition: all 0.3s ease;
+  }
+
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(155, 89, 182, 0.5);
+  }
+
+  .button {
+    background-image: linear-gradient(to right, #9b59b6, #8e44ad);
+    color: #f4f4f4;
+    border-radius: 20px;
+    padding: 0.75rem 1.5rem;
+    transition: all 0.3s ease;
+  }
+
+  .button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(155, 89, 182, 0.5);
+  }
+
+  .textcustom{
+    background-color: rgb(40, 40, 40);
+  }
